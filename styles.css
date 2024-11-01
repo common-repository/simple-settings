@@ -1,0 +1,181 @@
+
+    /**
+     * Plugin Name: Simple Settings
+     * Plugin URI: http://www.ilikemustard.com
+     * Description: CSS used to manipulate the admin interface.
+     * Version: 1.2
+     *
+     * Author: Jimmy K.
+     * Author URI: http://www.ilikemustard.com
+     */
+
+    /* ================================================== */
+    /* General Styles
+    /* ================================================== */
+
+    .clearer {
+        clear: both;
+    }
+
+    /* All Settings Screen */
+
+    /* ================================================== */
+    /* Table Navigation
+    /* (The area above below the screen title with the
+    /* 'Bulk Actions' and 'Dates' dropdowns.)
+    /* ================================================== */
+
+    .tablenav.top {
+        display: none;
+    }
+
+    /* ================================================== */
+    /* Row Actions
+    /* ================================================== */
+
+    .row-actions .inline.hide-if-no-js,
+    .row-actions .view {
+        /* Hide the 'Quick Edit' link. */
+        display: none !important;
+    }
+
+    .row-actions .trash {
+        /* Pseudo-hide the 'Trash' delimiter. */
+        color: #fff;
+    }
+
+    /* Add/Edit Setting Screen */
+
+    /* ================================================== */
+    /* Permalink Slug
+    /* ================================================== */
+
+    #edit-slug-box {
+        /* Hide the slug box. We don't need to show permalinks. */
+        display: none;
+    }
+
+    /* ================================================== */
+    /* Publishing Actions
+    /* (The metabox on the right with the 'Move to
+    /* Trash' and 'Publish/Update' buttons.)
+    /* ================================================== */
+
+    #minor-publishing-actions,
+    #misc-publishing-actions,
+    #major-publishing-actions .spinner {
+        /* Hide the elements that aren't absolutely necessary. */
+        display: none !important;
+        display: none;
+    }
+
+    #major-publishing-actions #delete-action,
+    #major-publishing-actions #publishing-action {
+        /* Remove the float on the 'major' publishing actions. */
+        float: none;
+    }
+
+    #major-publishing-actions #delete-action {
+        margin-bottom: 5px;
+    }
+
+    #major-publishing-actions #delete-action .submitdelete,
+    #major-publishing-actions #publishing-action #publish {
+        width: 100%;
+        display: block;
+    }
+
+    #major-publishing-actions #delete-action a {
+        /* Make the 'delete' action look like the 'publish' action. */
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-color: #9c2121;
+        background-image: linear-gradient(to bottom, #c42929, #9c2121);
+        border-color: #9c2121 #9c2121 #8c1d1d;
+        -moz-border-radius: 3px;
+        -o-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        -moz-box-shadow: 0 1px 0 rgba(229, 119, 119, 0.5) inset;
+        -o-box-shadow: 0 1px 0 rgba(229, 119, 119, 0.5) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(229, 119, 119, 0.5) inset;
+        box-shadow: 0 1px 0 rgba(229, 119, 119, 0.5) inset;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: inherit;
+        line-height: 28px;
+        margin: 0;
+        padding: 0 12px 2px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+    }
+
+    #major-publishing-actions #delete-action a:hover {
+        background-color: #b82727;
+        background-image: linear-gradient(to bottom, #d12e2e, #9c2121);
+        border-color: #801b1b;
+        box-shadow: 0 1px 0 rgba(229, 119, 119, 0.6) inset;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    /* ================================================== */
+    /* Add/Edit Setting Form
+    /* ================================================== */
+
+    #post-body-content {
+        /* Decrease the margin between the 'name' and the 'postbox'. */
+        margin-bottom: 10px;
+    }
+
+    .postbox#valuesMeta .inside {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .postbox#valuesMeta label {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .postbox#valuesMeta select {
+        width: 300px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .postbox#valuesMeta textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+
+    .postbox#valuesMeta .booleanValueWrapper input[type="radio"],
+    .postbox#valuesMeta .booleanValueWrapper span {
+        float: left;
+    }
+
+    .postbox#valuesMeta .booleanValueWrapper label {
+        font-weight: normal;
+        float: left;
+        margin: 0;
+    }
+
+    .postbox#valuesMeta .booleanValueWrapper span {
+        float: left;
+        padding: 0 15px 0 7px;
+        /* line-height: 18px; */
+    }
